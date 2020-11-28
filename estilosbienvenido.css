@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #FFFFFF;
+    display: flex;
+    min-height: 100vh;
+    
+}
+/*Estilo para el menu de principal (about us y todo eso)*/
+
+header{
+    margin: 10px auto;
+	width: auto;
+    background: #FF8E06;
+    
+    
+    
+}
+
+.navegacion{
+	width: auto;
+	margin: auto;
+	background: #fff;
+    border-radius: 50px;
+    
+}
+
+.navegacion ul{
+	list-style: none;
+    border: 5px solid #000;
+    border-radius: 50px;
+    
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+    border-right: 1px solid #28231B;
+    
+}
+
+.menu > li > a{
+	display: block;
+	padding: 10px 70px;
+	color: #353535;
+	font-family: 'roboto';
+    font-weight: 900;
+	text-decoration: none;
+   
+}
+
+.menu li a:hover{
+	color: #FF8E06;
+	transition: all .3s;
+    
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #fff;
+	width: 150%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 10px;
+	color: #000;
+	font-family: 'roboto';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
