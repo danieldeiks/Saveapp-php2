@@ -4,31 +4,20 @@
         <title>Saveapp</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
-                <link rel="stylesheet" href="estilos.css">
+                <link rel="stylesheet" href="css/estilos.css">
                 
 
     </head>
     <body>
        <div class="contenedor">
+       <! -- Menú header -->
         <header class="header">
-		<nav class="navegacion">
-			<ul class="menu">
-				<li><a href="index.php">Inicio</a></li>
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="#">Servicios</a>
-					<ul class="submenu">
-						<li><a href="#">Servicio #1</a></li>
-						<li><a href="#">Servicio #2</a></li>
-						<li><a href="#">Servicio #3</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-        </nav>
-        
+		<?php
+           include('header.html');
+        ?>
 	    </header>
 	    
-	    
+	    <! -- Contenido de página -->
 	    <main class="contenido">
     
             <form action="validar.php" method="post">

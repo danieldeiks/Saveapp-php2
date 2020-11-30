@@ -2,26 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Nosotros</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
        <div class="contenedor">
         <header class="header">
-		<nav class="navegacion">
-			<ul class="menu">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="#">Servicios</a>
-					<ul class="submenu">
-						<li><a href="#">Servicio #1</a></li>
-						<li><a href="#">Servicio #2</a></li>
-						<li><a href="#">Servicio #3</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-        </nav>
+		<?php
+		include("header.html"); 
+            ?>
         
 	    </header>
 	    
